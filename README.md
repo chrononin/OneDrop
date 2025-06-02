@@ -117,18 +117,7 @@ Connect to others in complex network situations, or over the Internet.
 [Host your own instance with Docker or Node.js](docs/host-your-own.md).
 
 ## Support
-<a href="https://www.buymeacoffee.com/pairdrop" target="_blank">
-<img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy me a coffee" style="height: 60px !important;width: 217px !important;" >
-</a>
-<br />
-<br />
 
-PairDrop is libre, and always will be. \
-If you find it useful and want to support free and open-source software, please consider donating using the button above. \
-I footed the bill for the domain and the server, and you can help create and maintain great software by supporting me. \
-Thank you very much for your contribution!
 
 ## Contributing
-Feel free to [open an issue](https://github.com/schlagmichdoch/pairdrop/issues/new/choose) or a
-[pull request](https://github.com/schlagmichdoch/pairdrop/pulls), following the
-[Contributing Guidelines](CONTRIBUTING.md).
+
