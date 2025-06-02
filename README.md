@@ -3,7 +3,7 @@
     <img src="public/images/android-chrome-512x512.png" alt="Logo"  width="150" height="150">
   </a>
  
-  # _Send it_, with [PairDrop](https://onedrop.chronon.in)
+  # _Send it_, with [OneDrop](https://onedrop.chronon.in)
 
   <p>
     Local file sharing <a href="https://onedrop.chronon.in"><strong>in your web browser</strong></a>. 
