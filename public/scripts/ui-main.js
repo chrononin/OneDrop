@@ -17,6 +17,61 @@ class Events {
     }
 }
 
+//Background enable
+class Background {
+
+    constructor(){
+        this.$backgroundEnableBtn = document.getElementById('background-enable');
+        this.$backgroundDisableBtn = document.getElementById('background-disable');
+
+        let currentBackground = this.getCurrentBackground();
+        if (currentBackground === 'enable') {
+            this.setBackgroundEnable();
+        } else if (currentTheme === 'disable') {
+            this.setBackgroundDisable();
+        }
+    }
+
+    getCurrentBackground() {
+        return localStorage.getItem('currentBackground');
+    }
+
+    setCurrentBackground(currentBackground) {
+        localStorage.setItem('currentBackground', currentBackground);
+    }
+
+    onToggleBackground() {
+        if (this.getCurrentBackground() !== 'enable') {
+            this.setBackgroundToEnable();
+        } else {
+            this.setBackgroundToDisable();
+        }
+    }
+
+    setBackgroundToEnable() {
+        document.body.classList.remove('light-theme');
+        document.body.classList.add('dark-theme');
+
+        this.setCurrentTheme('dark');
+
+        this.$themeAutoBtn.classList.remove("selected");
+        this.$themeLightBtn.classList.remove("selected");
+        this.$themeDarkBtn.classList.add("selected");
+    }
+
+    setBackgroundToDisable() {
+        document.body.classList.remove('dark-theme');
+        document.body.classList.add('light-theme');
+
+        this.setCurrentTheme('light');
+
+        this.$themeAutoBtn.classList.remove("selected");
+        this.$themeLightBtn.classList.add("selected");
+        this.$themeDarkBtn.classList.remove("selected");
+    }
+
+}
+
 // UIs needed on start
 class ThemeUI {
 
